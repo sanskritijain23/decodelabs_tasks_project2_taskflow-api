@@ -1,6 +1,6 @@
 # TaskFlow API
 
-TaskFlow API is a small REST API for managing tasks. It uses Express for routing, SQLite for storage, Joi for request validation, and Jest with Supertest for tests.
+TaskFlow API is a RESTful backend application for managing tasks. It provides complete CRUD operations, request validation, centralized error handling, and automated testing using Node.js, Express.js, SQLite, Joi, Jest, and Supertest.
 
 ## Features
 
@@ -25,34 +25,30 @@ TaskFlow API is a small REST API for managing tasks. It uses Express for routing
 
 ```text
 taskflow-api/
-  server.js
-  src/
-    app.js
-    config/
-      database.js
-    controllers/
-      task.controller.js
-    middleware/
-      errorHandler.js
-      validation.js
-    models/
-      task.model.js
-    routes/
-      task.routes.js
-    validators/
-      task.validator.js
-  tests/
-    integration/
-      task.api.test.js
-    unit/
-      task.model.test.js
-  database/
-    .gitkeep
+├── server.js
+├── package.json
+├── README.md
+├── src/
+│   ├── app.js
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── validators/
+├── tests/
+│   ├── integration/
+│   └── unit/
+└── database/
 ```
 
 ## Installation
 
 ```bash
+git clone https://github.com/sanskritijain23/TaskFlow-API.git
+
+cd TaskFlow-API
+
 npm install
 ```
 
@@ -165,6 +161,7 @@ Delete success returns HTTP 204 with no response body.
 - Tasks are stored in a local SQLite database.
 - There is no authentication or user ownership.
 - PUT updates the main task fields in one request.
+- No authentication or authorization is implemented.
 
 ## Future Improvements
 
@@ -172,7 +169,10 @@ Delete success returns HTTP 204 with no response body.
 - Add filtering by completion status.
 - Add created date and updated date filters.
 - Add user accounts if the project needs multi-user support.
+- Implement PATCH endpoint.
 
 ## Author
 
-Your Name
+Author
+
+Sanskriti Jain
