@@ -173,6 +173,4 @@ Delete success returns HTTP 204 with no response body.
 
 ## Author
 
-Author
-
 Sanskriti Jain
