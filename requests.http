@@ -1,0 +1,61 @@
+### Health Check
+GET http://localhost:3000/api/health
+
+###
+
+### Create Task
+POST http://localhost:3000/api/v1/tasks
+Content-Type: application/json
+
+{
+  "title": "Backend Project Verification",
+  "description": "Manual testing using REST Client",
+  "completed": false
+}
+
+###
+
+### Get All Tasks
+GET http://localhost:3000/api/v1/tasks
+
+###
+
+### Get Task By ID
+GET http://localhost:3000/api/v1/tasks/1
+
+###
+
+### Update Task
+PUT http://localhost:3000/api/v1/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Backend Project Verification",
+  "description": "Updated successfully",
+  "completed": true
+}
+
+###
+
+### Delete Task
+DELETE http://localhost:3000/api/v1/tasks/1
+
+###
+
+### Invalid Body
+POST http://localhost:3000/api/v1/tasks
+Content-Type: application/json
+
+{
+  "description": "Missing title"
+}
+
+###
+
+### Invalid ID
+GET http://localhost:3000/api/v1/tasks/abc
+
+###
+
+### Missing Resource
+GET http://localhost:3000/api/v1/tasks/999999
