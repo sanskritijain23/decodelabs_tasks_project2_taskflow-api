@@ -24,7 +24,7 @@ TaskFlow API is a RESTful backend application for managing tasks. It provides co
 ## Folder Structure
 
 ```text
-taskflow-api/
+decodelabs_tasks_project2_taskflow-api/
 ├── server.js
 ├── package.json
 ├── README.md
@@ -45,9 +45,8 @@ taskflow-api/
 ## Installation
 
 ```bash
-git clone https://github.com/sanskritijain23/TaskFlow-API.git
-
-cd TaskFlow-API
+git clone https://github.com/sanskritijain23/decodelabs_tasks_project2_taskflow-api.git
+cd decodelabs_tasks_project2_taskflow-api
 
 npm install
 ```
